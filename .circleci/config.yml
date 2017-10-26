@@ -46,3 +46,8 @@ jobs:
       - run:
           name: Send to CodeCov
           command: bash <(curl -s https://codecov.io/bash)
+deployment:
+  staging:
+    branch: master
+    heroku:
+      appname: attendancetest
